@@ -1,5 +1,8 @@
 from tkinter import *
 import pytube
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 def download():
     video_url = url.get()
